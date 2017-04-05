@@ -45,10 +45,9 @@ From client:
 
     $http.get("/api/getsomedata", config);
 
-    ```
+
 Then on server, you would have:
 
-```javascript
 app.use(auth.secure({
   token: 'enter token here',
   secret:'enter secret here',
