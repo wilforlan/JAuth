@@ -47,13 +47,15 @@ From client:
 
     ```
 Then on server, you would have:
-  ```javascript
-  app.use(auth.secure({
-    token: 'enter token here',
-    secret:'enter secret here',
-    identifier: 'enter identifier here',
-  }));
+
+```javascript
+app.use(auth.secure({
+  token: 'enter token here',
+  secret:'enter secret here',
+  identifier: 'enter identifier here',
+}));
 ```
+
 You could use it as route specific middleware.
 
 # Use Cases:
